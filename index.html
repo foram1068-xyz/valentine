@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Basic meta setup -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Page Title -->
+    <title>Valentine Surprise</title>
+
+    <!-- Google Font (Clean + Elegant) -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= PAGE 1 ================= -->
+    <section id="page1" class="page active">
+        <div class="card">
+            <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExcmxjYWZrcDE4em1lNTIzdTdyNHFtMWExN2h6dW9yYnZ6aGpjcjllZiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/wPnbkEcr2tXiTN0Lmq/giphy.gif" alt="Cute Bear" class="main-image">
+
+            <h1>Will you be mine 🥺?</h1>
+
+            <p>Life is an incredible journey, and I want to spend every single second of it with you.</p>
+
+            <div class="btn-group">
+                <button class="btn yes-btn" onclick="goToPage2()">YES</button>
+                <button class="btn no-btn">NO</button>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ================= PAGE 2 ================= -->
+    <section id="page2" class="page">
+        <div class="card">
+            <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExdXMzZ2h6Z21jajZyYWZjYWRpMzRxcWtxbzE5a3lkanEwNW1kcWFyayZlcD12MV9naWZzX3NlYXJjaCZjdD1n/gjHkRHSuHqu99y9Yjt/giphy.gif" alt="Couple Bear" class="main-image">
+
+            <h1>Happy Valentine Day Baby! 💍</h1>
+
+            <p>Every second with you is a celebration. You are the spark that makes my world so much brighter!</p>
+
+            <button class="btn primary-btn" onclick="goToPage3()">SEE MY GIFTS →</button>
+        </div>
+    </section>
+
+
+    <!-- ================= PAGE 3 ================= -->
+    <section id="page3" class="page">
+        <div class="card">
+            <h1>Something for You</h1>
+
+            <div class="gift-container">
+
+             <div class="gift-card" onclick="startQuiz()">
+               <img src="https://cdn-icons-png.flaticon.com/512/1040/1040241.png" alt="Quiz">
+                <h3>Quiz 💕</h3>
+            </div>
+
+            <div class="gift-card" onclick="openLetter()">
+                <img src="https://cdn-icons-png.flaticon.com/512/2514/2514065.png" alt="Letter">
+                <h3>Letter 💌</h3>
+            </div>
+
+            <div class="gift-card" onclick="openPhotos()">
+                <img src="https://cdn-icons-png.flaticon.com/512/3342/3342137.png" alt="Photos">
+                <h3>Photos 📸</h3>
+            </div>
+            </div>
+
+            <button class="btn primary-btn">FINALLY 💖</button>
+        </div>
+
+    </section>
+
+<!-- ================= QUIZ PAGE ================= -->
+<section id="quizPage" class="page">
+    <div class="card">
+
+        <h1>Quiz for you 😚</h1>
+
+        <!-- Quiz Content -->
+        <div id="quizContent"></div>
+
+        <!-- Back Button -->
+        <button class="btn primary-btn" onclick="goBackToGifts()">← BACK</button>
+
+    </div>
+</section>
+
+<!-- ================= LETTER PAGE ================= -->
+<section id="letterPage" class="page">
+    <div class="card">
+        <h1>A Letter For You 🥺</h1>
+
+        <div class="letter-box">
+            <p>
+                My Baby,<br><br>
+                 i don’t know how to write big dramatic love letters, 
+                but I do know how you make me feel. You make my days lighter,
+                 my worries smaller, and my heart calmer just by being you. 
+                 Somehow, without even trying, you became my favourite person 
+                 — the one I want to talk to first and think about last every single day.
+            </p>
+        </div>
+
+        <button class="btn primary-btn" onclick="goBackToGifts()">← BACK</button>
+    </div>
+</section>
+
+<!-- ================= PHOTO PAGE ================= -->
+<section id="photoPage" class="page">
+    <div class="card">
+        <h1>Look at this cutie 😭</h1>
+
+        <div class="photo-grid">
+
+            <div class="photo-card">
+                <img src="WhatsApp%20Image%202026-02-13%20at%209.54.34%20PM.jpeg" alt="">
+                <p>Sweet Hello</p>
+            </div>
+
+            <div class="photo-card">
+                <img src="WhatsApp%20Image%202026-02-13%20at%209.54.35%20PM.jpeg" alt="">
+                <p>True Smile</p>
+            </div>
+
+            <div class="photo-card">
+                <img src="WhatsApp%20Image%202026-02-13%20at%209.54.36%20PM.jpeg" alt="">
+                <p>Perfect Day</p>
+            </div>
+
+            <div class="photo-card">
+                <img src="WhatsApp%20Image%202026-02-13%20at%209.54.5%20PM.jpeg" alt="">
+                <p>Only Us</p>
+            </div>
+
+            <div class="photo-card">
+                <img src="WhatsApp%20Image%202026-02-13%20at%2094.35%20PM.jpeg" alt="">
+                <p>My Home</p>  
+            </div>
+
+            <div class="photo-card">
+                <img src="WhatsApp%20Image%202026-02-13at%209.54.35%20PM.jpeg" alt="">
+                <p>Forever Us</p>
+            </div>
+
+        </div>
+
+        <button class="btn primary-btn" onclick="goToFinal()">FINALLY 💖</button>
+    </div>
+</section>
+   
+<!-- ================= FINAL PAGE ================= -->
+<section id="finalPage" class="page">
+    <div class="card">
+        <h1>You are my forever 🧿❤️!</h1>
+
+        <div class="final-media">
+            <!-- You will add your video or image here -->
+            <video controls>
+                <source src="WhatsApp%20Video%202026-02-14%20at%205.31.42%20PM.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <p>
+            I love you more than words can say ❤️<br>
+            No matter where life takes us, my heart will always choose you.
+            I’m grateful to call you mine.
+        </p>
+
+        <button class="btn primary-btn" onclick="goBackToGifts()">← BACK</button>
+    </div>
+</section>
+  
+
+<!-- JS File -->
+        <script src="script.js"></script>
+
+</body>
+</html>
